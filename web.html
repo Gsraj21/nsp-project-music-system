@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Music Website</title>
+    <link rel="stylesheet" href="webstyle.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main container">
+        <div class="navbar">
+            <img src="media/logo.png" class="logo">
+            <ul>
+                <li>
+                    <a class="nav-link" href="login.html">Log IN</a>
+                    <a class="nav-link" href="#">HOME</a>
+                    <a class="nav-link" href="#">PLAYLISTS</a>
+                    <a class="nav-link" href="#cta">ABOUT US</a>
+                    <a class="nav-link" href="#footer">HELP</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left-col">
+                <h1>
+                    THE<br>REAL<br>SOUND</h1>
+            </div>
+            <div class="right-col">
+                <p>Click Here To Listen</p>
+                <img src="media/play.png" id="icon">
+            </div>
+        </div>
+    </div>
+    <audio id="mySong">
+        <source src="media/song.mp3" type="audio/mp3">
+    </audio>
+    <!--features-->
+
+    <section id="features">
+        <div class="container-fluid">
+          <div class="feature-box col-lg-4">
+            <i class="icon fas fa-check-circle fa-4x"></i>
+        <h3 class="feature-title">Easy to use.</h3>
+        <p>very friendly user interface</p>
+          </div>
+    
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-bullseye fa-4x"></i>
+        <h3 class="feature-title">Ad-free</h3>
+        <p>Take any plan and listen ad free music</p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-thumbs-up fa-4x"></i>
+        <h3 class="feature-title">Enjoy</h3>
+        <p>Make your own playlist or Download music and listen offline</p>
+        </div>
+      </div>
+    
+      </section>
+    <!--section-->  
+    <section id="cta">
+        <div class="container-fluid">
+          <h2 class="big-heading">ABOUT US</h2>
+          <div class="details">
+            <section id="features">
+                <div class="container-fluid row">
+                  <div class="feature-box col-lg-4">
+
+                <h3 class="feature-title">Garvit Ghiya</h3>
+                <p>Reg. No. - PGI20CS022</p>
+                <p>2020pgicsgarvit22@poornima.org</p>
+
+                  </div>
+            
+                <div class="feature-box col-lg-4">
+
+                <h3 class="feature-title">Gaurav Singh</h3>
+                <p>Reg.no- PGI20CS024</p>
+                <p>2020pgicsgaurav24@poornima.org</p>
+                </div>
+                <div class="feature-box col-lg-4">
+
+                <h3 class="feature-title">Gautam Singh</h3>
+                <p>Reg. No. - PGI20CS025</p>
+                <p> 2020pgicsgautam25@poornima.org</p>
+                </div>
+                <div class="feature-box col-lg-4">
+
+                <h3 class="feature-title">Aniket Mewara</h3>
+                <p>Reg. No. - PGI20CS089</p>
+                <p> 2020pgicsaniket89@poornima.org</p>
+
+                </div>
+              </div>
+            
+              </section>
+
+
+
+          </div>
+          </div>
+
+    <!--footer-->
+
+    <footer id="footer">
+        <div class="container-fluid">
+        <i class="social-icon social-icon fab fa-instagram"></i>
+        <i class="social-icon social-icon fab fa-facebook"></i>
+        <i class="social-icon social-icon fab fa-twitter"></i>
+        <i class="social-icon social-icon fab fa-linkedin-in"></i>
+    
+        <p>@copyright Team 3G</p>
+        </div>
+    
+      </footer>
+
+
+    <script>
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            if(mySong.paused){
+                mySong.play();
+                icon.src = "media/pause.png";
+            }else{
+                mySong.pause();
+                icon.src = "media/play.png";
+            }
+        }
+    </script>
+</body>
+</html>
